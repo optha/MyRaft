@@ -1,0 +1,16 @@
+# MyRaft
+学习Raft、RPC、跳表、协程相关demo
+
+## src
+### common
+  util - 延迟类、读写日志队列
+  config - 协程部分参数、时间参数
+### fiber
+  utils - 时间相关、解码、堆栈信息
+	fiber - 协程相关，创建、重置、挂起、恢复（resume）
+	thread - 线程创建、销毁
+	mutex - 读写锁
+	hook - hook系统函数
+	scheduler - 调度器，控制线程，线程再控制协程
+  singleton - 单例模式，确保一个类只有一个实例，并提供一个全局访问点来获取该实例。获取对应类型的单例对象的指针或智能指针。
+
